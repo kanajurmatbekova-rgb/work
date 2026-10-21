@@ -1,0 +1,47 @@
+.bot img{
+    width: 1500px;
+    height: 700px;
+}
+.bot1 img{
+    width: 400px;
+    height: 280px;
+    border-radius: -300px;
+}
+.bot2 img{
+    width: 200px;
+    height: 170px;
+border-radius: -180px;
+}
+
+
+.bot1 img{
+    position: absolute;
+    bottom: 250px;
+    left: 500px;
+    animation: bot 10s linear infinite;
+}
+.bot2 img{ 
+    position: relative;
+    bottom: 700px;
+    left: 360px;
+    animation: more 7s infinite;
+} 
+@keyframes bot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes more{
+    25%{
+        transform:translate(500px,0)
+    }
+    50%{
+        transform:translate(500px,500px)
+    }
+    75%{
+        transform:translate(0,500px)
+    }
+ }
